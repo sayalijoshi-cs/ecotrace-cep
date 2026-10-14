@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoTrace - Neighborhood Solar & Green Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>EcoTrace</h1>
+        <p>Neighborhood Solar Potential & Green Energy Portal</p>
+    </header>
+
+    <main class="container">
+        <!-- Solar Calculator Section -->
+        <section class="card">
+            <h2>Rooftop Solar & Subsidy Calculator</h2>
+            <form id="solarForm">
+                <label for="bill">Average Monthly Electricity Bill (₹):</label>
+                <input type="number" id="bill" required placeholder="e.g. 3000">
+
+                <button type="button" onclick="calculateSolar()">Calculate Solar Savings</button>
+            </form>
+            <div id="solar-result" class="result-box"></div>
+        </section>
+
+        <!-- Green Tips & E-Waste Guide -->
+        <section class="card">
+            <h2>Green Energy & E-Waste Guide</h2>
+            <ul>
+                <li><strong>Solar Benefits:</strong> Reduces household carbon footprint and utilizes government schemes like PM Surya Ghar.</li>
+                <li><strong>E-Waste Disposal:</strong> Never throw old batteries or chargers in household dustbins; drop them at certified e-waste collection centers.</li>
+                <li><strong>Energy Conservation:</strong> Switch to LED lighting and unplug appliances on standby mode.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
